@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons8-множественный-выбор-96.png" />
+    <None Remove="icons8-простой-завтрак-48.png" />
+    <None Remove="Pagefon.jpg" />
+    <None Remove="PhoneOne.jpg" />
+    <None Remove="photo.png" />
+    <None Remove="Prakt5Phone.jpg" />
+    <None Remove="завтрак.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.1.4" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icons8-множественный-выбор-96.png" />
+    <Resource Include="Pagefon.jpg" />
+    <Resource Include="PhoneOne.jpg" />
+    <Resource Include="photo.png" />
+    <Resource Include="Prakt5Phone.jpg" />
+    <Resource Include="завтрак.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Images\" />
+  </ItemGroup>
+
+</Project>

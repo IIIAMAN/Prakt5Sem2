@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Prakticheskaya5.Vibor"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Prakticheskaya5"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="100">
+    <Grid x:Name="Viborss">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="21*"></ColumnDefinition>
+            <ColumnDefinition Width="26*"></ColumnDefinition>
+            <ColumnDefinition Width="53*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="Checked" Content="CheckBox" HorizontalAlignment="Center" VerticalAlignment="Center" Height="18" Width="18"/>
+        <Label x:Name="Name" Grid.Column="2" Content="" Margin="1,13,2,13" FontSize="16" FontWeight="Bold" Foreground="#DDFFFFFF" VerticalAlignment="Center"/>
+        <Image x:Name="Image" Grid.Column="1" Margin="4,15,5,16" Source="/завтрак.png" Stretch="Fill">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/завтрак.png"/>
+            </Image.OpacityMask>
+        </Image>
+    </Grid>
+</UserControl>
